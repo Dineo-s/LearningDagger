@@ -7,6 +7,6 @@ import javax.inject.Inject
 * This "adds" it to the @component interface that helps with holding variables etc(to instantiate them)
 * to be injected into specified classes
 * */
-class Greeting @Inject constructor(){
+class Greeting @Inject constructor(val text: String){
     val sayHello = "Hello Dagger"
 }

@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(root)
 
         //This class "creates the component class" its created by dagger 2
-        DaggerConstructionBox.create().injectIntoActivity(this)
+        DaggerConstructionComponent.create().injectIntoActivity(this)
         binding.greetingTextView.text = greeting.sayHello
     }
 
